@@ -36,40 +36,40 @@ function scene_default(canvas, ctx) {
         //     }
         // ),
         new Key(
-            canvas.width-300+85, 50+0, 100, 100,
+            650, 290, 100, 100,
             { axis: 1, revertedAxis: true, linkedAxis: 0, keyText:"W",backgroundImage:KeyImage}
         ),
         new Key(
-            canvas.width-300+0, 50+100, 100, 100,
+            570, 390, 100, 100,
             { axis: 0, revertedAxis: true, linkedAxis: 1, keyText:"A",backgroundImage:KeyImage}
         ),
         new Key(
-            canvas.width-300+100, 50+100, 100, 100,
+            670, 390, 100, 100,
             { axis: 1, revertedAxis: false, linkedAxis: 0, keyText:"S",backgroundImage:KeyImage}
         ),
         new Key(
-            canvas.width-300+200, 50+100, 100, 100,
+            770, 390, 100, 100,
             { axis: 0, revertedAxis: false, linkedAxis: 1, keyText:"D",backgroundImage:KeyImage}
         ),
         new Key(
-            330, 100, 100, 100,
+            550, 290, 100, 100,
             { button: 6, axis: -1, keyText: "Q", backgroundImage: KeyImage }
         ),
         new Key(
-            330, 100, 100, 100,
+            750, 290, 100, 100,
             { button: 7, axis: -1, keyText: "E", backgroundImage: KeyImage }
         ),
         new Key(
-            330, 100, 100, 100,
+            940, 290, 100, 100,
             { button: 1, axis: -1, keyText: "P", backgroundImage: KeyImage }
         ),
         new Key(
-            330, 100, 100, 100,
+            910, 390, 100, 100,
             { button: 0, axis: -1, keyText: "L", backgroundImage: KeyImage }
         ),
         new Key(
-            330, 100, 100, 100,
-            { button: 2, axis: -1, keyText: "Shift", backgroundImage: KeyImage }
+            470, 490, 100, 100,
+            { button: 2, axis: -1, keyText: "⇧", backgroundImage: KeyImage }
         ),
         credit
     ];
