@@ -27,31 +27,49 @@ function scene_default(canvas, ctx) {
         // new Thumbstick(
         //     15, 50, 200, 200,
         //     {
-        //         xAxes: { 0: true, 2: true },
-        //         yAxes: { 1: true, 3: true },
-        //         backgroundProperties: { lineWidth: 4, strokeStyle: "#B4B4B4", fillStyle: "rgba(37, 37, 37, 0.43)" },
-        //         xLineProperties: { strokeStyle: "#B4B4B4", lineWidth: 4 },
-        //         yLineProperties: { strokeStyle: "#B4B4B4", lineWidth: 4 },
-        //         deadzoneProperties: { fillStyle: "#524d4d" },
-        //         inputVectorProperties: { strokeStyle: "#B4B4B4", lineWidth: 4 },
-        //         unitVectorProperties: { strokeStyle: "#524d4d", lineWidth: 4 },
+        //         backgroundProperties: {lineWidth:4, strokeStyle:"#B4B4B4", fillStyle:"rgba(37, 37, 37, 0.43)"},
+        //         xLineProperties: {strokeStyle:"#B4B4B4", lineWidth:4},
+        //         yLineProperties: {strokeStyle:"#B4B4B4", lineWidth:4},
+        //         deadzoneProperties: {fillStyle:"#524d4d"},
+        //         inputVectorProperties: {strokeStyle:"#B4B4B4", lineWidth:4},
+        //         unitVectorProperties: {strokeStyle:"#524d4d", lineWidth:4},
         //     }
         // ),
         new Key(
-            50 + 85, 50 + 0, 100, 100,
-            { axis: 1, revertedAxis: true, linkedAxis: 0, keyText: "W", backgroundImage: KeyImage }
+            canvas.width-300+85, 50+0, 100, 100,
+            { axis: 1, revertedAxis: true, linkedAxis: 0, keyText:"W",backgroundImage:KeyImage}
         ),
         new Key(
-            50 + 0, 50 + 100, 100, 100,
-            { axis: 0, revertedAxis: true, linkedAxis: 1, keyText: "A", backgroundImage: KeyImage }
+            canvas.width-300+0, 50+100, 100, 100,
+            { axis: 0, revertedAxis: true, linkedAxis: 1, keyText:"A",backgroundImage:KeyImage}
         ),
         new Key(
-            50 + 100, 50 + 100, 100, 100,
-            { axis: 3, revertedAxis: false, linkedAxis: 2, keyText: "S", backgroundImage: KeyImage }
+            canvas.width-300+100, 50+100, 100, 100,
+            { axis: 1, revertedAxis: false, linkedAxis: 0, keyText:"S",backgroundImage:KeyImage}
         ),
         new Key(
-            50 + 200, 50 + 100, 100, 100,
-            { axis: 2, revertedAxis: false, linkedAxis: 3, keyText: "D", backgroundImage: KeyImage }
+            canvas.width-300+200, 50+100, 100, 100,
+            { axis: 0, revertedAxis: false, linkedAxis: 1, keyText:"D",backgroundImage:KeyImage}
+        ),
+        new Key(
+            330, 100, 100, 100,
+            { button: 6, axis: -1, keyText: "Q", backgroundImage: KeyImage }
+        ),
+        new Key(
+            330, 100, 100, 100,
+            { button: 7, axis: -1, keyText: "E", backgroundImage: KeyImage }
+        ),
+        new Key(
+            330, 100, 100, 100,
+            { button: 1, axis: -1, keyText: "P", backgroundImage: KeyImage }
+        ),
+        new Key(
+            330, 100, 100, 100,
+            { button: 0, axis: -1, keyText: "L", backgroundImage: KeyImage }
+        ),
+        new Key(
+            330, 100, 100, 100,
+            { button: 2, axis: -1, keyText: "Shift", backgroundImage: KeyImage }
         ),
         credit
     ];
