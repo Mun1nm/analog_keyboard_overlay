@@ -61,11 +61,11 @@ function scene_default(canvas, ctx) {
         ),
         new Key(
             940, 290, 100, 100,
-            { button: 1, axis: -1, keyText: "P", backgroundImage: KeyImage }
+            { button: 0, axis: -1, keyText: "P", backgroundImage: KeyImage }
         ),
         new Key(
             910, 390, 100, 100,
-            { button: 0, axis: -1, keyText: "L", backgroundImage: KeyImage }
+            { button: 1, axis: -1, keyText: "L", backgroundImage: KeyImage }
         ),
         new Key(
             470, 490, 100, 100,
